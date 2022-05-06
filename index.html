@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">  
+
+    <script
+      src="https://kit.fontawesome.com/d899bdd014.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Encripta2 | Elramz77
+    </title>
+  </head>
+  <body>
+    <header><h1>Encripta2</h1></header>
+
+    <main>
+      <section class="input">
+        <textarea
+          id="mainText"
+          class="input-text"
+          wrap="hard"
+          type="text"
+          required
+          autofocus
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+
+        <span class="info"><i class="fa-solid fa-circle-info"></i> Sólo se permiten letras minúsculas</span>
+
+        <a href="#r" class="btn input-btn input-encript"
+          ><i class="fa-solid fa-lock"></i> Encriptar</a
+        >
+        <a href="#r" class="btn input-btn input-decript"
+          ><i class="fa-solid fa-unlock"></i> Desencriptar</a
+        >
+      </section>
+
+      <section class="output">
+        <textarea
+          id="r"
+          class="output-text"
+          wrap="hard"
+          type="text"
+          readonly
+        ></textarea>
+        <a href="#mainText" class="btn output-copy"
+          ><i class="fa-solid fa-copy"></i> copy</a
+        >
+
+        <img
+          id="hidden-img"
+          class="nofound"
+          src="./img/the_search.svg"
+          width="150px"
+          alt=""
+        />
+        <h4 id="hidden-h4" class="nofound">No se ha encontrado ningún mensaje</h4>
+        <p id="hidden-p" class="nofound">
+          Prueba escribiendo un texto para encriptar o desencriptar 
+        </p>
+      </section>
+
+      <footer class="footer">
+        <span>Made with &#x1F499; by <a target="a_blank" href="https://github.com/Elramz77"> @Elramz77</a></span>
+      </footer>
+    </main>
+
+    <script src="./script/encryptJS.js"></script>
+  </body>
+</html>
